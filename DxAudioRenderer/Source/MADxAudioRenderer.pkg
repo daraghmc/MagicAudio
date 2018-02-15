@@ -1,0 +1,6 @@
+#ifndef MADXAUDIORENDERER_PKG
+#define MADXAUDIORENDERER_PKG
+
+#include "MADxSoundRenderer.h"
+
+#endif // MADXAUDIORENDERER_PKG

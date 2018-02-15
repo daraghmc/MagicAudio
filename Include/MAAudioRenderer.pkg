@@ -1,0 +1,14 @@
+#ifndef MAAUDIORENDERER_PKG
+#define MAAUDIORENDERER_PKG
+
+#include "MAAudio.h"
+#include "MAAudioRenderer.h"
+#include "MAAudioException.h"
+#include "MAPanable.h"
+#include "MASound1D.h"
+#include "MASound2D.h"
+#include "MASound3D.h"
+#include "MASequence.h"
+#include "MAAudioFile.h"
+
+#endif // MAAUDIORENDERER_PKG

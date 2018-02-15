@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2024
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DxAudioRenderer", "DxAudioRenderer.vcxproj", "{6FAD6F4B-913D-4302-8C8D-FC9F977FEE42}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6FAD6F4B-913D-4302-8C8D-FC9F977FEE42}.Debug|x86.ActiveCfg = Debug|Win32
+		{6FAD6F4B-913D-4302-8C8D-FC9F977FEE42}.Debug|x86.Build.0 = Debug|Win32
+		{6FAD6F4B-913D-4302-8C8D-FC9F977FEE42}.Release|x86.ActiveCfg = Release|Win32
+		{6FAD6F4B-913D-4302-8C8D-FC9F977FEE42}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {98D94CA0-8B9B-4A1C-9EF7-01ECF12DDDE5}
+	EndGlobalSection
+EndGlobal

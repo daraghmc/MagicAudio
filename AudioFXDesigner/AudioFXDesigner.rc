@@ -1,0 +1,646 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "Source\resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_AUDIOFXDESIGNER DIALOGEX 0, 0, 352, 289
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "AudioFX Designer"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,4,177,50,16
+    PUSHBUTTON      "Cancel",IDCANCEL,58,177,50,16
+    CONTROL         "Delay",IDC_CHECK_DELAY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,9,52,34,10
+    CONTROL         "Amplitude Modulation",IDC_CHECK_AMPMOD,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,9,14,84,10
+    CONTROL         "Chorus",IDC_CHECK_CHORUS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,9,26,39,10
+    CONTROL         "Compressor",IDC_CHECK_COMPRESSOR,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,9,39,54,10
+    CONTROL         "Standard Reverb",IDC_CHECK_REVERB,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,9,114,71,10
+    CONTROL         "Environmental Reverb",IDC_CHECK_ENVERB,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,9,76,87,10
+    CONTROL         "Flanger",IDC_CHECK_FLANGER,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,9,89,40,10
+    PUSHBUTTON      "Play",IDC_BUTTON_PLAY,4,156,50,14,WS_DISABLED
+    PUSHBUTTON      "Load",IDC_BUTTON_LOAD,4,136,50,14
+    GROUPBOX        "Effects",IDC_STATIC,4,4,103,124
+    CONTROL         "Parametric EQ",IDC_CHECK_PARAMEQ,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,9,102,61,10
+    PUSHBUTTON      "Save",IDC_BUTTON_SAVE,58,136,50,14
+    PUSHBUTTON      "Stop",IDC_BUTTON_STOP,58,156,50,14
+    CONTROL         "Distortion",IDC_CHECK_DISTORTION,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,9,64,47,10
+    CONTROL         IDB_LOGO,IDC_STATIC,"Static",SS_BITMAP,4,197,17,15,WS_EX_CLIENTEDGE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 0,0,0,1
+ PRODUCTVERSION 0,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "Magic Audio"
+            VALUE "FileDescription", "AudioFX Designer "
+            VALUE "FileVersion", "0.0.0.1"
+            VALUE "InternalName", "AudioFXDesigner.exe"
+            VALUE "LegalCopyright", "TODO: (c) <Company name>.  All rights reserved."
+            VALUE "OriginalFilename", "AudioFXDesigner.exe"
+            VALUE "ProductName", "TODO: <Product name>"
+            VALUE "ProductVersion", "0.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_AUDIOFXDESIGNER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 345
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 282
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// RT_MANIFEST
+//
+
+IDR_MANIFEST            RT_MANIFEST             "res//AudioFXDesigner.manifest"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_AUDIOFXDESIGNER AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (Ireland) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENI)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_EIRE
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DELAY DIALOGEX 0, 0, 108, 180
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_DISABLED | WS_CAPTION | WS_SYSMENU
+CAPTION "Delay"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_SLIDER_DELAY_MIX,"msctls_trackbar32",TBS_AUTOTICKS | TBS_TOP | WS_TABSTOP,4,16,100,24,WS_EX_CLIENTEDGE
+    CONTROL         "",IDC_SLIDER_DELAY_FEEDBACK,"msctls_trackbar32",TBS_AUTOTICKS | TBS_TOP | WS_TABSTOP,3,56,100,24,WS_EX_CLIENTEDGE
+    CONTROL         "",IDC_SLIDER_DELAY_LEFTDELAY,"msctls_trackbar32",TBS_AUTOTICKS | TBS_TOP | WS_TABSTOP,4,96,100,24,WS_EX_CLIENTEDGE
+    CONTROL         "",IDC_SLIDER_DELAY_RIGHTDELAY,"msctls_trackbar32",TBS_AUTOTICKS | TBS_TOP | WS_TABSTOP,4,136,100,24,WS_EX_CLIENTEDGE
+    LTEXT           "Mix:",IDC_STATIC,4,4,14,8
+    LTEXT           "Feedback:",IDC_STATIC,4,44,34,8
+    LTEXT           "Left Delay:",IDC_STATIC,4,84,36,8
+    LTEXT           "Right Delay:",IDC_STATIC,4,124,40,8
+    LTEXT           "",IDC_STATIC_DELAY_MIX,20,4,22,8
+    CONTROL         "Enable Pan",IDC_CHECK_DELAY_PAN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,4,168,51,10
+    LTEXT           "",IDC_STATIC_DELAY_FEEDBACK,40,44,22,8
+    LTEXT           "",IDC_STATIC_DELAY_LEFTDELAY,40,84,22,8
+    LTEXT           "",IDC_STATIC_DELAY_RIGHTDELAY,44,124,22,8
+END
+
+IDD_CHORUS DIALOGEX 0, 0, 220, 178
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_DISABLED | WS_CAPTION | WS_SYSMENU
+CAPTION "Chorus"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "Sine",IDC_RADIO_CHORUS_WAVESINE,"Button",BS_AUTORADIOBUTTON | WS_GROUP,119,20,29,10
+    CONTROL         "",IDC_SLIDER_CHORUS_MIX,"msctls_trackbar32",TBS_AUTOTICKS | TBS_TOP | WS_TABSTOP,4,12,100,24,WS_EX_CLIENTEDGE
+    LTEXT           "Mix:",IDC_STATIC,4,2,14,8
+    CONTROL         "",IDC_SLIDER_CHORUS_FEEDBACK,"msctls_trackbar32",TBS_AUTOTICKS | TBS_TOP | WS_TABSTOP,4,154,100,24,WS_EX_CLIENTEDGE
+    LTEXT           "Feedback:",IDC_STATIC,4,144,34,8
+    LTEXT           "Frequency:",IDC_STATIC,4,108,38,8
+    LTEXT           "Depth:",IDC_STATIC,4,38,23,8
+    LTEXT           "Delay:",IDC_STATIC,4,74,22,8
+    CONTROL         "",IDC_SLIDER_CHORUS_DEPTH,"msctls_trackbar32",TBS_AUTOTICKS | TBS_TOP | WS_TABSTOP,4,48,100,24,WS_EX_CLIENTEDGE
+    CONTROL         "",IDC_SLIDER_CHORUS_DELAY,"msctls_trackbar32",TBS_AUTOTICKS | TBS_TOP | WS_TABSTOP,4,83,100,24,WS_EX_CLIENTEDGE
+    CONTROL         "",IDC_SLIDER_CHORUS_FREQUENCY,"msctls_trackbar32",TBS_AUTOTICKS | TBS_TOP | WS_TABSTOP,4,118,100,24,WS_EX_CLIENTEDGE
+    CONTROL         "Triangle",IDC_RADIO_CHORUS_WAVETRIANGLE,"Button",BS_AUTORADIOBUTTON,151,20,41,10
+    GROUPBOX        "Waveform",IDC_STATIC,115,8,100,28
+    CONTROL         "-180",IDC_RADIO_CHORUS_PHASENEG180,"Button",BS_AUTORADIOBUTTON | WS_GROUP,120,59,31,10
+    CONTROL         "-90",IDC_RADIO_CHORUS_PHASENEG90,"Button",BS_AUTORADIOBUTTON,151,59,27,10
+    CONTROL         "0",IDC_RADIO_CHORUS_PHASEZERO,"Button",BS_AUTORADIOBUTTON,180,59,20,10
+    CONTROL         "  90",IDC_RADIO_CHORUS_PHASEPOS90,"Button",BS_AUTORADIOBUTTON,120,70,28,10
+    CONTROL         "180",IDC_RADIO_CHORUS_PHASEPOS180,"Button",BS_AUTORADIOBUTTON,151,70,28,10
+    GROUPBOX        "Phase",IDC_STATIC,115,48,100,36
+    LTEXT           "",IDC_STATIC_CHORUS_MIX,20,2,28,8
+    LTEXT           "",IDC_STATIC_CHORUS_DEPTH,29,38,28,8
+    LTEXT           "",IDC_STATIC_CHORUS_DELAY,27,74,28,8
+    LTEXT           "",IDC_STATIC_CHORUS_FREQUENCY,41,108,28,8
+    LTEXT           "",IDC_STATIC_CHORUS_FEEDBACK,40,144,28,8
+END
+
+IDD_FLANGER DIALOGEX 0, 0, 226, 177
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_DISABLED | WS_CAPTION | WS_SYSMENU
+CAPTION "Flanger"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_SLIDER_FLANGER_DEPTH,"msctls_trackbar32",TBS_AUTOTICKS | TBS_TOP | WS_TABSTOP,4,46,100,24,WS_EX_CLIENTEDGE
+    LTEXT           "Mix:",IDC_STATIC,4,2,14,8
+    CONTROL         "",IDC_SLIDER_FLANGER_MIX,"msctls_trackbar32",TBS_AUTOTICKS | TBS_TOP | WS_TABSTOP,4,11,100,24,WS_EX_CLIENTEDGE
+    LTEXT           "Depth:",IDC_STATIC,4,36,23,8
+    LTEXT           "Delay:",IDC_STATIC,4,72,22,8
+    LTEXT           "Frequency:",IDC_STATIC,3,107,38,8
+    LTEXT           "Feeedback:",IDC_STATIC,4,142,38,8
+    CONTROL         "",IDC_SLIDER_FLANGER_DELAY,"msctls_trackbar32",TBS_AUTOTICKS | TBS_TOP | WS_TABSTOP,4,82,100,24,WS_EX_CLIENTEDGE
+    CONTROL         "",IDC_SLIDER_FLANGER_FREQUENCY,"msctls_trackbar32",TBS_AUTOTICKS | TBS_TOP | WS_TABSTOP,4,116,100,24,WS_EX_CLIENTEDGE
+    CONTROL         "",IDC_SLIDER_FLANGER_FEEDBACK,"msctls_trackbar32",TBS_AUTOTICKS | TBS_TOP | WS_TABSTOP,4,152,100,24,WS_EX_CLIENTEDGE
+    CONTROL         "Sine",IDC_RADIO_FLANGER_WAVESINE,"Button",BS_AUTORADIOBUTTON | WS_GROUP,123,20,29,10
+    CONTROL         "Triangle",IDC_RADIO_FLANGER_WAVETRIANGLE,"Button",BS_AUTORADIOBUTTON,171,20,41,10
+    CONTROL         "-180",IDC_RADIO_FLANGER_PHASENEG180,"Button",BS_AUTORADIOBUTTON | WS_GROUP,121,55,31,10
+    CONTROL         "-90",IDC_RADIO_FLANGER_PHASENEG90,"Button",BS_AUTORADIOBUTTON,157,55,27,10
+    CONTROL         "0",IDC_RADIO_FLANGER_PHASEZERO,"Button",BS_AUTORADIOBUTTON,189,55,20,10
+    CONTROL         "  90",IDC_RADIO_FLANGER_PHASEPOS90,"Button",BS_AUTORADIOBUTTON,121,67,28,10
+    CONTROL         "180",IDC_RADIO_FLANGER_PHASEPOS180,"Button",BS_AUTORADIOBUTTON,157,67,28,10
+    GROUPBOX        "Waveform",IDC_STATIC,116,8,100,28
+    GROUPBOX        "Phase",IDC_STATIC,117,44,100,36
+    LTEXT           "",IDC_STATIC_FLANGER_MIX,20,2,17,8
+    LTEXT           "",IDC_STATIC_FLANGER_DEPTH,28,36,18,8
+    LTEXT           "",IDC_STATIC_FLANGER_DELAY,28,72,23,8
+    LTEXT           "",IDC_STATIC_FLANGER_FREQUENCY,43,107,19,8
+    LTEXT           "",IDC_STATIC_FLANGER_FEEDBACK,44,142,20,8
+END
+
+IDD_STDREVERB DIALOGEX 0, 0, 108, 147
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Standard Reverb"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_SLIDER_REVERB_MIX,"msctls_trackbar32",TBS_AUTOTICKS | TBS_TOP | WS_TABSTOP,4,11,100,24,WS_EX_CLIENTEDGE
+    CONTROL         "",IDC_SLIDER_REVERB_TIME,"msctls_trackbar32",TBS_AUTOTICKS | TBS_TOP | WS_TABSTOP,4,83,100,24,WS_EX_CLIENTEDGE
+    CONTROL         "",IDC_SLIDER_REVERB_GAIN,"msctls_trackbar32",TBS_AUTOTICKS | TBS_TOP | WS_TABSTOP,4,48,100,24,WS_EX_CLIENTEDGE
+    LTEXT           "Mix:",IDC_STATIC,4,1,14,8
+    LTEXT           "Reverb Time:",IDC_STATIC,4,74,44,8
+    LTEXT           "Gain:",IDC_STATIC,4,38,18,8
+    LTEXT           "",IDC_STATIC_REVERB_MIX,20,1,39,8
+    LTEXT           "",IDC_STATIC_REVERB_GAIN,23,38,39,8
+    LTEXT           "",IDC_STATIC_REVERB_TIME,49,74,39,8
+    CONTROL         "",IDC_SLIDER_REVERB_HFRATIO,"msctls_trackbar32",TBS_AUTOTICKS | TBS_TOP | WS_TABSTOP,4,119,100,24,WS_EX_CLIENTEDGE
+    LTEXT           "HF Ratio:",IDC_STATIC,4,109,31,8
+    LTEXT           "",IDC_STATIC_REVERB_HFRATIO,37,109,39,8
+END
+
+IDD_COMPRESSOR DIALOGEX 0, 0, 108, 212
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_CAPTION | WS_SYSMENU
+CAPTION "Compressor"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_SLIDER_COMPRESSOR_GAIN,"msctls_trackbar32",TBS_AUTOTICKS | TBS_TOP | WS_TABSTOP,3,12,100,24,WS_EX_CLIENTEDGE
+    CONTROL         "",IDC_SLIDER_COMPRESSOR_RATIO,"msctls_trackbar32",TBS_AUTOTICKS | TBS_TOP | WS_TABSTOP,3,46,100,24,WS_EX_CLIENTEDGE
+    CONTROL         "",IDC_SLIDER_COMPRESSOR_THRESHOLD,"msctls_trackbar32",TBS_AUTOTICKS | TBS_TOP | WS_TABSTOP,3,81,100,24,WS_EX_CLIENTEDGE
+    CONTROL         "",IDC_SLIDER_COMPRESSOR_ATTACK,"msctls_trackbar32",TBS_AUTOTICKS | TBS_TOP | WS_TABSTOP,4,116,100,24,WS_EX_CLIENTEDGE
+    CONTROL         "",IDC_SLIDER_COMPRESSOR_RELEASE,"msctls_trackbar32",TBS_AUTOTICKS | TBS_TOP | WS_TABSTOP,3,151,100,24,WS_EX_CLIENTEDGE
+    CONTROL         "",IDC_SLIDER_COMPRESSOR_DELAY,"msctls_trackbar32",TBS_AUTOTICKS | TBS_TOP | WS_TABSTOP,3,185,100,24,WS_EX_CLIENTEDGE
+    LTEXT           "Gain:",IDC_STATIC,3,3,18,8
+    LTEXT           "Ratio:",IDC_STATIC,3,37,20,8
+    LTEXT           "Threshold:",IDC_STATIC,3,72,35,8
+    LTEXT           "Attack:",IDC_STATIC,4,107,24,8
+    LTEXT           "Release:",IDC_STATIC,3,142,29,8
+    LTEXT           "Delay:",IDC_STATIC,4,176,22,8
+    LTEXT           "",IDC_STATIC_COMPRESS_GAIN,23,3,37,8
+    LTEXT           "",IDC_STATIC_COMPRESS_RATIO,25,37,37,8
+    LTEXT           "",IDC_STATIC_COMPRESS_THRESHOLD,40,72,37,8
+    LTEXT           "",IDC_STATIC_COMPRESS_ATTACK,30,107,37,8
+    LTEXT           "",IDC_STATIC_COMPRESS_RELEASE,33,142,37,8
+    LTEXT           "",IDC_STATIC_COMPRESS_DELAY,27,176,37,8
+END
+
+IDD_PARAMEQ DIALOGEX 0, 0, 108, 108
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_CAPTION | WS_SYSMENU
+CAPTION "Parametric EQ"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_SLIDER_PARAMEQ_GAIN,"msctls_trackbar32",TBS_AUTOTICKS | TBS_TOP | WS_TABSTOP,4,12,100,24,WS_EX_CLIENTEDGE
+    CONTROL         "",IDC_SLIDER_PARAMEQ_CENTER,"msctls_trackbar32",TBS_AUTOTICKS | TBS_TOP | WS_TABSTOP,4,48,100,24,WS_EX_CLIENTEDGE
+    CONTROL         "",IDC_SLIDER_PARAMEQ_BANDWIDTH,"msctls_trackbar32",TBS_AUTOTICKS | TBS_TOP | WS_TABSTOP,4,83,100,24,WS_EX_CLIENTEDGE
+    LTEXT           "Center:",IDC_STATIC,4,39,26,8
+    LTEXT           "Gain:",IDC_STATIC,4,3,18,8
+    LTEXT           "Bandwidth:",IDC_STATIC,4,74,37,8
+    LTEXT           "",IDC_STATIC_PARAMEQ_GAIN,24,3,36,8
+    LTEXT           "",IDC_STATIC_PARAMEQ_CENTER,32,39,36,8
+    LTEXT           "",IDC_STATIC_PARAMEQ_BANDWIDTH,43,74,36,8
+END
+
+IDD_AMPMOD DIALOGEX 0, 0, 108, 76
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_CAPTION | WS_SYSMENU
+CAPTION "Amplitude Modulation"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_SLIDER_AMPMOD_FREQUENCY,"msctls_trackbar32",TBS_AUTOTICKS | TBS_TOP | WS_TABSTOP,4,12,100,24,WS_EX_CLIENTEDGE
+    LTEXT           "Frequency:",IDC_STATIC,4,3,38,8
+    LTEXT           "",IDC_STATIC_FREQUENCY,43,3,19,8
+    CONTROL         "Triangle",IDC_RADIO_AMPMOD_WAVETRIANGLE,"Button",BS_AUTORADIOBUTTON | WS_GROUP,8,52,41,10
+    CONTROL         "Square",IDC_RADIO_AMPMOD_WAVESQUARE,"Button",BS_AUTORADIOBUTTON,8,62,39,10
+    GROUPBOX        "Waveform",IDC_STATIC,4,43,99,32
+END
+
+IDD_ENVERB DIALOGEX 0, 0, 216, 249
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_CAPTION | WS_SYSMENU
+CAPTION "Environmental Reverb"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_SLIDER_ENVERB_ROOMATTEN,"msctls_trackbar32",TBS_AUTOTICKS | TBS_TOP | WS_TABSTOP,1,10,100,24,WS_EX_CLIENTEDGE
+    COMBOBOX        IDC_COMBO_ENVERB_PRESETS,61,226,108,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Use Preset",IDC_CHECK_ENVERB_USEPRESET,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,227,52,10
+    CONTROL         "",IDC_SLIDER_ENVERB_HFATTEN,"msctls_trackbar32",TBS_AUTOTICKS | TBS_TOP | WS_TABSTOP,1,45,100,24,WS_EX_CLIENTEDGE
+    CONTROL         "",IDC_SLIDER_ENVERB_REFLECTATTEN,"msctls_trackbar32",TBS_AUTOTICKS | TBS_TOP | WS_TABSTOP,1,82,100,24,WS_EX_CLIENTEDGE
+    CONTROL         "",IDC_SLIDER_ENVERB_REVERBATTEN,"msctls_trackbar32",TBS_AUTOTICKS | TBS_TOP | WS_TABSTOP,1,118,100,24,WS_EX_CLIENTEDGE
+    CONTROL         "",IDC_SLIDER_ENVERB_REFLECTDELAY,"msctls_trackbar32",TBS_AUTOTICKS | TBS_TOP | WS_TABSTOP,1,154,100,24,WS_EX_CLIENTEDGE
+    CONTROL         "",IDC_SLIDER_ENVERB_REVERBDELAY,"msctls_trackbar32",TBS_AUTOTICKS | TBS_TOP | WS_TABSTOP,1,189,100,24,WS_EX_CLIENTEDGE
+    CONTROL         "",IDC_SLIDER_ENVERB_DECAY,"msctls_trackbar32",TBS_AUTOTICKS | TBS_TOP | WS_TABSTOP,112,10,100,24,WS_EX_CLIENTEDGE
+    CONTROL         "",IDC_SLIDER_ENVERB_DECAYHFRATIO,"msctls_trackbar32",TBS_AUTOTICKS | TBS_TOP | WS_TABSTOP,112,45,100,24,WS_EX_CLIENTEDGE
+    CONTROL         "",IDC_SLIDER_ENVERB_ROLLOFF,"msctls_trackbar32",TBS_AUTOTICKS | TBS_TOP | WS_TABSTOP,112,82,100,24,WS_EX_CLIENTEDGE
+    CONTROL         "",IDC_SLIDER_ENVERB_DIFFUSION,"msctls_trackbar32",TBS_AUTOTICKS | TBS_TOP | WS_TABSTOP,112,118,100,24,WS_EX_CLIENTEDGE
+    CONTROL         "",IDC_SLIDER_ENVERB_DENSITY,"msctls_trackbar32",TBS_AUTOTICKS | TBS_TOP | WS_TABSTOP,111,154,100,24,WS_EX_CLIENTEDGE
+    CONTROL         "",IDC_SLIDER_ENVERB_HFREF,"msctls_trackbar32",TBS_AUTOTICKS | TBS_TOP | WS_TABSTOP,112,189,100,24,WS_EX_CLIENTEDGE
+    LTEXT           "Room Attenuation:",IDC_STATIC,1,1,62,8
+    LTEXT           "HF Attenuation:",IDC_STATIC,1,36,60,8
+    LTEXT           "Reflection Attenuation:",IDC_STATIC,1,73,76,8
+    LTEXT           "Reverb Attenuation:",IDC_STATIC,1,108,67,8
+    LTEXT           "Reflection Delay:",IDC_STATIC,1,145,56,8
+    LTEXT           "Reverb Delay:",IDC_STATIC,1,180,47,8
+    GROUPBOX        "Presets",IDC_STATIC,2,216,210,28
+    LTEXT           "Decay Time:",IDC_STATIC,112,1,40,8
+    LTEXT           "Decay Time HF Ratio:",IDC_STATIC,112,36,70,8
+    LTEXT           "Rolloff:",IDC_STATIC,112,73,24,8
+    LTEXT           "Diffusion:",IDC_STATIC,112,109,32,8
+    LTEXT           "Density:",IDC_STATIC,111,145,28,8
+    LTEXT           "HF Reference:",IDC_STATIC,112,180,48,8
+    LTEXT           "",IDC_STATIC_ENVERB_ROOMATTEN,64,1,36,8
+    LTEXT           "",IDC_STATIC_ENVERB_HFATTEN,55,36,36,8
+    LTEXT           "",IDC_STATIC_ENVERB_REFLECTATTEN,78,73,22,8
+    LTEXT           "",IDC_STATIC_ENVERB_REVERBATTEN,70,108,36,8
+    LTEXT           "",IDC_STATIC_ENVERB_REFLECTDELAY,59,145,36,8
+    LTEXT           "",IDC_STATIC_ENVERB_REVERBDELAY,50,180,36,8
+    LTEXT           "",IDC_STATIC_ENVERB_DECAYTIME,154,1,36,8
+    LTEXT           "",IDC_STATIC_ENVERB_HFRATIO,183,36,25,8
+    LTEXT           "",IDC_STATIC_ENVERB_ROLLOFF,138,73,36,8
+    LTEXT           "",IDC_STATIC_ENVERB_DENSITY,141,145,36,8
+    LTEXT           "",IDC_STATIC_ENVERB_HFREF,161,180,36,8
+    LTEXT           "",IDC_STATIC_ENVERB_DIFFUSION,145,109,36,8
+END
+
+IDD_DISTORTION DIALOGEX 0, 0, 108, 180
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_CAPTION | WS_SYSMENU
+CAPTION "Distortion"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_SLIDER_DISTORT_GAIN,"msctls_trackbar32",TBS_AUTOTICKS | TBS_TOP | WS_TABSTOP,4,12,100,24,WS_EX_CLIENTEDGE
+    CONTROL         "",IDC_SLIDER_DISTORT_INTENSITY,"msctls_trackbar32",TBS_AUTOTICKS | TBS_TOP | WS_TABSTOP,4,48,100,24,WS_EX_CLIENTEDGE
+    CONTROL         "",IDC_SLIDER_DISTORT_CENTER,"msctls_trackbar32",TBS_AUTOTICKS | TBS_TOP | WS_TABSTOP,3,82,100,24,WS_EX_CLIENTEDGE
+    CONTROL         "",IDC_SLIDER_DISTORT_BANDWIDTH,"msctls_trackbar32",TBS_AUTOTICKS | TBS_TOP | WS_TABSTOP,4,116,100,24,WS_EX_CLIENTEDGE
+    CONTROL         "",IDC_SLIDER_DISTORT_CUTOFF,"msctls_trackbar32",TBS_AUTOTICKS | TBS_TOP | WS_TABSTOP,4,152,100,24,WS_EX_CLIENTEDGE
+    LTEXT           "Gain:",IDC_STATIC,3,3,18,8
+    LTEXT           "Intensity:",IDC_STATIC,3,39,32,8
+    LTEXT           "Center:",IDC_STATIC,4,73,26,8
+    LTEXT           "Bandwidth:",IDC_STATIC,3,107,37,8
+    LTEXT           "Cutoff:",IDC_STATIC,4,142,24,8
+    LTEXT           "",IDC_STATIC_DISTORT_GAIN,23,3,19,8
+    LTEXT           "",IDC_STATIC_DISTORT_INTENSITY,37,39,19,8
+    LTEXT           "",IDC_STATIC_DISTORT_CENTER,31,73,19,8
+    LTEXT           "",IDC_STATIC_DISTORT_BANDWIDTH,42,107,19,8
+    LTEXT           "",IDC_STATIC_DISTORT_CUTOFF,30,142,19,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_DELAY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 101
+        TOPMARGIN, 2
+        BOTTOMMARGIN, 173
+    END
+
+    IDD_CHORUS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 213
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 171
+    END
+
+    IDD_FLANGER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 219
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 170
+    END
+
+    IDD_STDREVERB, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 101
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 140
+    END
+
+    IDD_COMPRESSOR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 101
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 205
+    END
+
+    IDD_PARAMEQ, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 101
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 101
+    END
+
+    IDD_AMPMOD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 101
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 69
+    END
+
+    IDD_ENVERB, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 209
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 242
+    END
+
+    IDD_DISTORTION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 101
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 173
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "Source\\resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\AudioFXDesigner.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\r\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_APPICON             ICON                    "res\\icon.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_LOGO                BITMAP                  "res\\logo.bmp"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_ENVERBPRESET_ALLEY  "Alley"
+    IDS_ENVERBPRESET_ARENA  "Arena"
+    IDS_ENVERBPRESET_AUDITORIUM "Auditorium"
+    IDS_ENVERBPRESET_BATHROOM "Bathroom"
+    IDS_ENVERBPRESET_CAVE   "Cave"
+    IDS_ENVERBPRESET_CARPETEDHALLWAY "Carpeted Hallway"
+    IDS_ENVERBPRESET_CITY   "City"
+    IDS_ENVERBPRESET_CONCERTHALL "Concert Hall"
+    IDS_ENVERBPRESET_DEFAULT "Default"
+    IDS_ENVERBPRESET_FOREST "Forest"
+    IDS_ENVERBPRESET_GENERIC "Generic"
+    IDS_ENVERBPRESET_HALLWAY "Hallway"
+    IDS_ENVERBPRESET_HANGAR "Hangar"
+    IDS_ENVERBPRESET_LARGEHALL "Large Hall"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_ENVERBPRESET_LARGEROOM "Large Room"
+    IDS_ENVERBPRESET_LIVINGROOM "Living Room"
+    IDS_ENVERBPRESET_MEDIUMHALL "Medium Hall"
+    IDS_ENVERBPRESET_MOUNTAINS "Mountains"
+    IDS_ENVERBPRESET_PADDEDCELL "Padded Cell"
+    IDS_ENVERBPRESET_PARKINGLOT "Parking Lot"
+    IDS_ENVERBPRESET_PLAIN  "Plain"
+    IDS_ENVERBPRESET_PLATE  "Plate"
+    IDS_ENVERBPRESET_QUARRY "Quarry"
+    IDS_ENVERBPRESET_ROOM   "Room"
+    IDS_ENVERBPRESET_SEWERPIPE "Sewer Pipe"
+    IDS_ENVERBPRESET_SMALLROOM "Small Room"
+    IDS_ENVERBPRESET_STONECORRIDOR "Stone Corridor"
+    IDS_ENVERBPRESET_STONEROOM "Stone Room"
+    IDS_ENVERBPRESET_UNDERWATER "Under Water"
+    IDS_TEXT_HFRATIO        "Reverb Time HF Ratio"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_ENVERBPRESET_MEDIUMROOM "Medium Room"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_TEXT_ROLLOFF        "Rolloff"
+    IDS_TEXT_DIFFUSION      "Diffusion"
+    IDS_TEXT_DENSITY        "Density"
+    IDS_TEXT_HFREF          "HF Reference"
+    IDS_TEXT_STDREVERB      "Standard Reverb"
+    IDS_TEXT_TIME           "Time"
+    IDS_ERR_NOEFFECTSELECTED "No effects selected."
+    IDS_ERR_CREATEFILE      "Failed to create file."
+    IDS_TEXT_HEADER         "Magic Audio AudioFX Designer V0.1"
+    IDS_TEXT_FILE           "File"
+    IDS_TEXT_NUMEFFECTS     "Number of Effects"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_TEXT_AMPMOD         "Amplitude Modulation"
+    IDS_TEXT_FREQ           "Frequency"
+    IDS_TEXT_WAVEFORM       "Waveform"
+    IDS_TEXT_TRIANGLE       "Triangle"
+    IDS_TEXT_SQUARE         "Square"
+    IDS_TEXT_CHORUS         "Chorus"
+    IDS_TEXT_MIX            "Mix"
+    IDS_TEXT_DEPTH          "Depth"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_TEXT_DELAY          "Delay"
+    IDS_TEXT_FEEDBACK       "Feedback"
+    IDS_TEXT_SINE           "Sine"
+    IDS_TEXT_PHASE          "Phase"
+    IDS_TEXT_DEGREES        "degrees"
+    IDS_TEXT_COMPRESSOR     "Compressor"
+    IDS_TEXT_GAIN           "Gain"
+    IDS_TEXT_RATIO          "Ratio"
+    IDS_TEXT_ATTACK         "Attack"
+    IDS_TEXT_RELEASE        "Release"
+    IDS_TEXT_THRESHOLD      "Threshold"
+    IDS_TEXT_LEFTDELAY      "Left Delay"
+    IDS_TEXT_RIGHTDELAY     "Right Delay"
+    IDS_TEXT_PAN            "Pan"
+    IDS_TEXT_DISTORTION     "Distortion"
+    IDS_TEXT_INTENSITY      "Intensity"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_TEXT_CENTER         "Center"
+    IDS_TEXT_BANDWIDTH      "Bandwidth"
+    IDS_TEXT_CUTOFF         "Cutoff"
+    IDS_TEXT_FLANGER        "Flanger"
+    IDS_TEXT_PARAMEQ        "Parametric EQ"
+    IDS_TEXT_SEMITONES      "semitones"
+    IDS_TEXT_ENVERB         "Environmental Reverb"
+    IDS_TEXT_PRESET         "Preset"
+    IDS_TEXT_ROOMATTEN      "Room Attenuation"
+    IDS_TEXT_HFATTEN        "Room HF Attenuation"
+    IDS_TEXT_REFLECTATTEN   "Reflection Attenuation"
+    IDS_TEXT_REVERBATTEN    "Reverb Attenuation"
+    IDS_TEXT_REFLECTDELAY   "Reflection Delay"
+    IDS_TEXT_REVERBDELAY    "Reverb Delay"
+    IDS_TEXT_DECAY          "Decay Time"
+    IDS_TEXT_DECAYHFRATIO   "Decay Time HF Ratio"
+END
+
+#endif    // English (Ireland) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\AudioFXDesigner.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
