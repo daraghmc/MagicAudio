@@ -4,7 +4,7 @@ This code was originally intended to integrate with the open source Wild Magic 3
 
 This code was originally written in 2002, but (with a few modifications) still builds and runs fine.
 
-Build Environment: MSVC 2017
+Build Environment: MSVC 2017. Solutions for samples/tools will build any dependent libraries.
 
 Projects:
 
