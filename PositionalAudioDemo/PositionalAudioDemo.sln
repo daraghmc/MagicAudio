@@ -25,36 +25,24 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DxAudioRenderer", "..\DxAud
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|x64 = Debug|x64
 		Debug|x86 = Debug|x86
-		Release|x64 = Release|x64
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{B3980643-8D36-447C-A8AA-3B690CECCE5D}.Debug|x64.ActiveCfg = Debug|x64
-		{B3980643-8D36-447C-A8AA-3B690CECCE5D}.Debug|x64.Build.0 = Debug|x64
 		{B3980643-8D36-447C-A8AA-3B690CECCE5D}.Debug|x86.ActiveCfg = Debug|Win32
 		{B3980643-8D36-447C-A8AA-3B690CECCE5D}.Debug|x86.Build.0 = Debug|Win32
-		{B3980643-8D36-447C-A8AA-3B690CECCE5D}.Release|x64.ActiveCfg = Release|x64
-		{B3980643-8D36-447C-A8AA-3B690CECCE5D}.Release|x64.Build.0 = Release|x64
 		{B3980643-8D36-447C-A8AA-3B690CECCE5D}.Release|x86.ActiveCfg = Release|Win32
 		{B3980643-8D36-447C-A8AA-3B690CECCE5D}.Release|x86.Build.0 = Release|Win32
-		{C71AC5F2-7606-4C0A-A8B7-3AA585D5BA86}.Debug|x64.ActiveCfg = Debug|Win32
 		{C71AC5F2-7606-4C0A-A8B7-3AA585D5BA86}.Debug|x86.ActiveCfg = Debug|Win32
 		{C71AC5F2-7606-4C0A-A8B7-3AA585D5BA86}.Debug|x86.Build.0 = Debug|Win32
-		{C71AC5F2-7606-4C0A-A8B7-3AA585D5BA86}.Release|x64.ActiveCfg = Release|Win32
 		{C71AC5F2-7606-4C0A-A8B7-3AA585D5BA86}.Release|x86.ActiveCfg = Release|Win32
 		{C71AC5F2-7606-4C0A-A8B7-3AA585D5BA86}.Release|x86.Build.0 = Release|Win32
-		{BD1888D8-7DBB-44BA-835D-882A5D2B7823}.Debug|x64.ActiveCfg = Debug|Win32
 		{BD1888D8-7DBB-44BA-835D-882A5D2B7823}.Debug|x86.ActiveCfg = Debug|Win32
 		{BD1888D8-7DBB-44BA-835D-882A5D2B7823}.Debug|x86.Build.0 = Debug|Win32
-		{BD1888D8-7DBB-44BA-835D-882A5D2B7823}.Release|x64.ActiveCfg = Release|Win32
 		{BD1888D8-7DBB-44BA-835D-882A5D2B7823}.Release|x86.ActiveCfg = Release|Win32
 		{BD1888D8-7DBB-44BA-835D-882A5D2B7823}.Release|x86.Build.0 = Release|Win32
-		{6FAD6F4B-913D-4302-8C8D-FC9F977FEE42}.Debug|x64.ActiveCfg = Debug|Win32
 		{6FAD6F4B-913D-4302-8C8D-FC9F977FEE42}.Debug|x86.ActiveCfg = Debug|Win32
 		{6FAD6F4B-913D-4302-8C8D-FC9F977FEE42}.Debug|x86.Build.0 = Debug|Win32
-		{6FAD6F4B-913D-4302-8C8D-FC9F977FEE42}.Release|x64.ActiveCfg = Release|Win32
 		{6FAD6F4B-913D-4302-8C8D-FC9F977FEE42}.Release|x86.ActiveCfg = Release|Win32
 		{6FAD6F4B-913D-4302-8C8D-FC9F977FEE42}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
